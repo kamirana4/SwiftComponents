@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Gd-K8-y0a">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Auction-->
+        <scene sceneID="BiJ-yS-laf">
+            <objects>
+                <viewController title="Auction" id="won-CK-S2q" customClass="ThirdViewController" customModule="TabBarExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eiR-OW-xBJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Third View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="cZH-kY-Efy">
+                                <rect key="frame" x="106.5" y="344" width="163" height="43"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by ThirdViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y1K-SW-wl9">
+                                <rect key="frame" x="88" y="395" width="200" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTS-b5-hoj">
+                                <rect key="frame" x="143.5" y="420" width="89" height="30"/>
+                                <color key="backgroundColor" red="0.25865342879999997" green="0.92575412329999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Show Details">
+                                    <color key="titleColor" red="0.64312065969999999" green="0.049289279509999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="dwE-0e-ovr" kind="show" id="hwH-HK-olY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Y1K-SW-wl9" firstAttribute="top" secondItem="cZH-kY-Efy" secondAttribute="bottom" constant="8" symbolic="YES" id="2aw-5n-R43"/>
+                            <constraint firstItem="JTS-b5-hoj" firstAttribute="top" secondItem="Y1K-SW-wl9" secondAttribute="bottom" constant="8" id="4kV-80-Dxk"/>
+                            <constraint firstItem="cZH-kY-Efy" firstAttribute="centerY" secondItem="gJ2-2J-3ZV" secondAttribute="centerY" id="Hbx-RM-5tE"/>
+                            <constraint firstItem="cZH-kY-Efy" firstAttribute="centerX" secondItem="gJ2-2J-3ZV" secondAttribute="centerX" id="OT7-a3-ly5"/>
+                            <constraint firstItem="JTS-b5-hoj" firstAttribute="centerX" secondItem="Y1K-SW-wl9" secondAttribute="centerX" id="PXj-vT-6cC"/>
+                            <constraint firstItem="Y1K-SW-wl9" firstAttribute="centerX" secondItem="eiR-OW-xBJ" secondAttribute="centerX" id="oLg-DX-yyo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gJ2-2J-3ZV"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Auction" id="d2H-Um-hJc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Rh-Rb-B4c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1252" y="853"/>
+        </scene>
+        <!--Third ViewController Detail-->
+        <scene sceneID="dBK-Qz-1YG">
+            <objects>
+                <viewController title="Third ViewController Detail" id="dwE-0e-ovr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="82J-rn-QzO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.25865342879999997" green="0.92575412329999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="ag9-Rs-Pef"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eYv-Ek-f45" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1954" y="852"/>
+        </scene>
+        <!--Auction-->
+        <scene sceneID="I4T-Jy-wzF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4Gd-K8-y0a" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Auction" image="auction" id="Nze-yo-LVe"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bPG-Fv-Z1V">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="won-CK-S2q" kind="relationship" relationship="rootViewController" id="8d2-i2-P1d"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qkE-Fz-9kw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="497" y="854"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="auction" width="32" height="32"/>
+    </resources>
+</document>

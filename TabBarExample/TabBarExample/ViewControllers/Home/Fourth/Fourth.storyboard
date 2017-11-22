@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rsn-11-n3A">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dove-->
+        <scene sceneID="GsD-dJ-m4T">
+            <objects>
+                <viewController title="Dove" id="64Z-aT-eQ8" customClass="FourthViewController" customModule="TabBarExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vfZ-A7-dtd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Fourth View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="cAw-aJ-nwo">
+                                <rect key="frame" x="96" y="344" width="183.5" height="43"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FourthViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ol3-8m-ba7">
+                                <rect key="frame" x="83.5" y="395" width="208.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNd-mn-Oh3">
+                                <rect key="frame" x="142.5" y="420" width="89" height="30"/>
+                                <color key="backgroundColor" red="0.25865342879999997" green="0.92575412329999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Show Details">
+                                    <color key="titleColor" red="0.64312065969999999" green="0.049289279509999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vN1-VB-MQS" kind="show" id="1h9-Mh-hUV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ol3-8m-ba7" firstAttribute="centerX" secondItem="vfZ-A7-dtd" secondAttribute="centerX" id="CEW-Cf-774"/>
+                            <constraint firstItem="SNd-mn-Oh3" firstAttribute="centerX" secondItem="ol3-8m-ba7" secondAttribute="centerX" id="Os5-Dl-qFa"/>
+                            <constraint firstItem="cAw-aJ-nwo" firstAttribute="centerX" secondItem="ScH-Ki-64d" secondAttribute="centerX" id="PNB-Q6-whP"/>
+                            <constraint firstItem="cAw-aJ-nwo" firstAttribute="centerY" secondItem="ScH-Ki-64d" secondAttribute="centerY" id="W1b-x1-R3g"/>
+                            <constraint firstItem="ol3-8m-ba7" firstAttribute="top" secondItem="cAw-aJ-nwo" secondAttribute="bottom" constant="8" symbolic="YES" id="cCh-xw-taK"/>
+                            <constraint firstItem="SNd-mn-Oh3" firstAttribute="top" secondItem="ol3-8m-ba7" secondAttribute="bottom" constant="8" id="j0S-CU-GdC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ScH-Ki-64d"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Dove" id="kvj-X3-bRQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oFV-tV-XVU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2838" y="851"/>
+        </scene>
+        <!--Fourth ViewController Detail-->
+        <scene sceneID="t0I-Eb-YrM">
+            <objects>
+                <viewController title="Fourth ViewController Detail" id="vN1-VB-MQS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vyp-wL-GYb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.25865342879999997" green="0.92575412329999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Bpl-45-Xl7"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wgf-jA-x2d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3572" y="851"/>
+        </scene>
+        <!--Dove-->
+        <scene sceneID="1tR-M6-hg6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rsn-11-n3A" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Dove" image="dove" id="5N4-Vc-Mmn"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IuF-DU-e2u">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="64Z-aT-eQ8" kind="relationship" relationship="rootViewController" id="diP-M3-bnv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MWs-HV-bMJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2116" y="851"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dove" width="32" height="32"/>
+    </resources>
+</document>
