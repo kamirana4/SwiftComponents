@@ -7,5 +7,5 @@ TabBarExample:<br/>
 
 ExpandableTableViewExample:<br/>
 [![ExpandableCell1](_PNG/ExpandableCell1.png)](_PNG/ExpandableCell1.png)
-[![ExpandableCell2](_PNG/ExpandableCell2.png)](_PNG/ExpandableCell2.png)
+[![ExpandableCell2](_PNG/ExpandableCell2.gif)](_PNG/ExpandableCell2.gif)
 <br/>
