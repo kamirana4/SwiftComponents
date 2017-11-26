@@ -31,14 +31,24 @@
                                 <constraint firstAttribute="width" constant="22" id="ooK-ff-nTU"/>
                             </constraints>
                         </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="keh-gL-RWD">
+                            <rect key="frame" x="0.0" y="82" width="375" height="1"/>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="ikY-dD-fZF"/>
+                            </constraints>
+                        </view>
                     </subviews>
-                    <color key="backgroundColor" red="0.97352510690689087" green="0.98814421892166138" blue="0.0079077864065766335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" red="0.25865342879999997" green="0.92575412329999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstItem="Z1V-Nl-rjy" firstAttribute="top" secondItem="E0Q-8H-LDp" secondAttribute="top" constant="24" id="9pv-Ll-Gy1"/>
                         <constraint firstAttribute="trailing" secondItem="JAK-zn-d7N" secondAttribute="trailing" constant="24" id="HZV-IU-pFv"/>
                         <constraint firstItem="JAK-zn-d7N" firstAttribute="leading" secondItem="Z1V-Nl-rjy" secondAttribute="trailing" constant="16" id="MM7-Ou-3kU"/>
                         <constraint firstItem="Z1V-Nl-rjy" firstAttribute="leading" secondItem="E0Q-8H-LDp" secondAttribute="leading" constant="16" id="YcK-34-VOh"/>
                         <constraint firstAttribute="bottom" secondItem="Z1V-Nl-rjy" secondAttribute="bottom" constant="16" id="fRD-Bl-ZwU"/>
+                        <constraint firstAttribute="trailing" secondItem="keh-gL-RWD" secondAttribute="trailing" id="gIb-E5-wYT"/>
+                        <constraint firstAttribute="bottom" secondItem="keh-gL-RWD" secondAttribute="bottom" id="gJL-sD-rFE"/>
+                        <constraint firstItem="keh-gL-RWD" firstAttribute="leading" secondItem="E0Q-8H-LDp" secondAttribute="leading" id="pqM-ec-cS5"/>
                         <constraint firstItem="JAK-zn-d7N" firstAttribute="centerY" secondItem="Z1V-Nl-rjy" secondAttribute="centerY" id="zEX-8a-N5r"/>
                     </constraints>
                 </view>

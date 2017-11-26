@@ -16,7 +16,6 @@
 		A504AB8C1FC6ECCF00F9348D /* ExpandableTableViewExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A504AB8B1FC6ECCF00F9348D /* ExpandableTableViewExampleUITests.swift */; };
 		A504AB9C1FC6F09600F9348D /* SectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A504AB9B1FC6F09600F9348D /* SectionHeaderView.xib */; };
 		A504AB9E1FC6F0B100F9348D /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A504AB9D1FC6F0B100F9348D /* SectionHeaderView.swift */; };
-		A504ABA11FC6F3F100F9348D /* UIView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A504ABA01FC6F3F100F9348D /* UIView+Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +51,6 @@
 		A504AB8D1FC6ECCF00F9348D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A504AB9B1FC6F09600F9348D /* SectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeaderView.xib; sourceTree = "<group>"; };
 		A504AB9D1FC6F0B100F9348D /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
-		A504ABA01FC6F3F100F9348D /* UIView+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Helper.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,7 +133,6 @@
 		A504AB991FC6F06700F9348D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A504AB9F1FC6F3DF00F9348D /* Extensions */,
 				A504AB9A1FC6F07000F9348D /* SectionHeader */,
 			);
 			path = Views;
@@ -148,14 +145,6 @@
 				A504AB9D1FC6F0B100F9348D /* SectionHeaderView.swift */,
 			);
 			path = SectionHeader;
-			sourceTree = "<group>";
-		};
-		A504AB9F1FC6F3DF00F9348D /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				A504ABA01FC6F3F100F9348D /* UIView+Helper.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,7 +284,6 @@
 			files = (
 				A504AB6E1FC6ECCF00F9348D /* ViewController.swift in Sources */,
 				A504AB9E1FC6F0B100F9348D /* SectionHeaderView.swift in Sources */,
-				A504ABA11FC6F3F100F9348D /* UIView+Helper.swift in Sources */,
 				A504AB6C1FC6ECCF00F9348D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -2,14 +2,14 @@
 //  SectionHeaderView.swift
 //  ExpandableTableViewExample
 //
-//  Created by SAMER DABBAGH on 11/23/17.
+//  Created by M.Kamran on 11/23/17.
 //  Copyright © 2017 M.Kamran. All rights reserved.
 //
 
 import UIKit
 
 protocol SectionTapDelegate: class {
-    func onSectionTouched(_ index: Int)
+    func onSectionTouched(_ section: Int)
 }
 
 class SectionHeaderView: UIView {
@@ -20,6 +20,7 @@ class SectionHeaderView: UIView {
     
     // MARK: - Properties
     private var index = 0
+    private var isSelected = false
     weak private var delegate: SectionTapDelegate?
     
     // MARK: - View's Lifecycle
@@ -34,6 +35,7 @@ class SectionHeaderView: UIView {
         self.addGestureRecognizer(tapGesture)
     }
     
+    // MARK: - User Interactions
     @objc func onTap() {
         self.delegate?.onSectionTouched(self.index)
     }
@@ -43,6 +45,11 @@ class SectionHeaderView: UIView {
         self.index = index
         self.delegate = delegate
         self.titleLabel.text = title
+    }
+    
+    public func updateArrowImage() {
+        isSelected = !isSelected
+        arrowImage.image = isSelected ? #imageLiteral(resourceName: "upArrow") : #imageLiteral(resourceName: "downArrow")
     }
 }
 
