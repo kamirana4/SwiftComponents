@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--ExpandableTableViewCell-->
+        <!--ExpandableTableView-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ExpandableTableViewExample" customModuleProvider="target" sceneMemberID="viewController">
@@ -35,7 +35,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="ExpandableTableViewCell" id="Uva-cw-Tjr"/>
+                    <navigationItem key="navigationItem" title="ExpandableTableView" id="Uva-cw-Tjr"/>
                     <connections>
                         <outlet property="tableView" destination="OTk-vc-9gK" id="2PS-aN-Az3"/>
                     </connections>
