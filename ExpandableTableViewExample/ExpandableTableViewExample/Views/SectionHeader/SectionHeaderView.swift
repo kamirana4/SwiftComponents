@@ -19,7 +19,7 @@ class SectionHeaderView: UIView {
     @IBOutlet weak var arrowImage: UIImageView!
     
     // MARK: - Properties
-    private var index = 0
+    private var section = 0
     private var isSelected = false
     weak private var delegate: SectionTapDelegate?
     
@@ -37,12 +37,12 @@ class SectionHeaderView: UIView {
     
     // MARK: - User Interactions
     @objc func onTap() {
-        self.delegate?.onSectionTouched(self.index)
+        self.delegate?.onSectionTouched(self.section)
     }
     
     // MARK: - Update UI
-    public func configure(_ title: String, index: Int, delegate: SectionTapDelegate?) {
-        self.index = index
+    public func configure(_ title: String, section: Int, delegate: SectionTapDelegate?) {
+        self.section = section
         self.delegate = delegate
         self.titleLabel.text = title
     }

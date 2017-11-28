@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         for i in 0..<sectionTitles.count {
             if let sectionHeader = SectionHeaderView.fromNib() {
                 let title = sectionTitles[i] as! String
-                sectionHeader.configure(title, index: i, delegate: self)
+                sectionHeader.configure(title, section: i, delegate: self)
                 sectionHeaders.append(sectionHeader)
             }
         }
