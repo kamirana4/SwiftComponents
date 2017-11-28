@@ -74,9 +74,7 @@ extension ViewController: UITableViewDataSource {
      - parameter section: Section index to remove the rows
      */
     fileprivate func deleteSectionRows(_ section: Int) {
-        if (currentSection == -1) {
-            return
-        }
+        guard currentSection != -1 else { return }
         
         var indexPaths: [IndexPath] = []
         for i in 0..<self.dataSource.count {
@@ -85,9 +83,10 @@ extension ViewController: UITableViewDataSource {
         sectionHeaders[currentSection].updateArrowImage()
         
         currentSection = -1
-        if (indexPaths.count > 0) {
-            self.tableView.deleteRows(at: indexPaths, with: .top)
-        }
+
+        guard indexPaths.count > 0 else { return }
+        
+        self.tableView.deleteRows(at: indexPaths, with: .top)
     }
     
     /**
@@ -120,9 +119,9 @@ extension ViewController: SectionTapDelegate {
     func onSectionTouched(_ section: Int) {
         let oldSection = currentSection
         self.deleteSectionRows(section)
-        if oldSection == section {
-            return
-        }
+        
+        guard oldSection != section else { return }
+
         self.reloadSection(section)
     }
 }
